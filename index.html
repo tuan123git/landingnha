@@ -9,21 +9,17 @@ body{
     font-family: Arial, sans-serif;
     margin:0;
     background:#f5f5f5;
-    color:#333;
 }
 .container{
     max-width:900px;
     margin:auto;
     background:#fff;
 }
-img{
-    max-width:100%;
-    display:block;
-}
-.section{
-    padding:20px;
-}
+img{max-width:100%; display:block;}
+
+.section{padding:20px;}
 .center{text-align:center;}
+
 .btn{
     display:inline-block;
     padding:14px 20px;
@@ -34,11 +30,19 @@ img{
     text-decoration:none;
     color:#fff;
 }
-.btn-wifi{background:#e53935; font-size:20px;}
-.btn-fb{background:#1877f2;}
 .btn-zalo{background:#0f9d58;}
-.btn-call{background:#ff9800;}
+.btn-fb{background:#1877f2;}
+.btn-wifi{background:#e53935; font-size:20px;}
 .btn-kho{background:#673ab7;}
+
+.call-text{
+    font-size:18px;
+    font-weight:bold;
+    margin-top:10px;
+}
+.call-text span{
+    font-size:22px;
+}
 
 .house-box{
     max-height:220px;
@@ -50,23 +54,31 @@ img{
 .house-item{
     padding:8px 0;
     border-bottom:1px dashed #ccc;
-    font-size:15px;
 }
+
 .code-box{
     margin-top:10px;
     font-size:18px;
     font-weight:bold;
 }
-.code-box span{
-    color:red;
+.code-box span{color:red;}
+
+.media img{
+    width:50%;
+    margin:10px auto;
 }
-.form input{
+
+/* FORM */
+.form-wrap{
+    max-width:420px;
+}
+.form-wrap input{
     width:100%;
     padding:12px;
     margin:8px 0;
     font-size:16px;
 }
-.form button{
+.form-wrap button{
     width:100%;
     padding:14px;
     font-size:18px;
@@ -75,10 +87,7 @@ img{
     border:none;
     border-radius:6px;
 }
-.media img{
-    width:50%;
-    margin:10px auto;
-}
+
 .footer{
     background:#222;
     color:#fff;
@@ -92,13 +101,19 @@ img{
 <div class="container">
 
     <!-- BANNER -->
-    <img src="https://raw.githubusercontent.com/tuan123git/landingnha/main/Banner1.png" alt="Banner Tuấn 123">
+    <img src="https://raw.githubusercontent.com/tuan123git/landingnha/main/Banner1.png">
 
-    <!-- SOCIAL BUTTONS -->
+    <!-- CALL TEXT -->
+    <div class="section center">
+        <div class="call-text">
+            GỌI NGAY <span>👇👇</span>
+        </div>
+    </div>
+
+    <!-- SOCIAL -->
     <div class="section center">
         <a class="btn btn-zalo" href="https://zalo.me/0975626023" target="_blank">ZALO</a>
         <a class="btn btn-fb" href="https://www.facebook.com/letuanbds123/" target="_blank">FACEBOOK</a>
-        <a class="btn btn-call" href="tel:0975626023">GỌI NGAY</a>
     </div>
 
     <!-- WIFI -->
@@ -141,11 +156,11 @@ img{
     <!-- FORM -->
     <div class="section">
         <h2>ĐĂNG KÝ NGAY</h2>
-        <div class="form">
-            <input type="text" placeholder="Họ và Tên">
-            <input type="tel" placeholder="Số điện thoại">
-            <button>GỬI THÔNG TIN</button>
-        </div>
+        <form class="form-wrap">
+            <input type="text" name="name" placeholder="Họ và Tên" required>
+            <input type="tel" name="phone" placeholder="Số điện thoại" required>
+            <button type="submit">GỬI THÔNG TIN</button>
+        </form>
     </div>
 
     <!-- FOOTER -->
