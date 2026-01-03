@@ -22,26 +22,30 @@ img{max-width:100%; display:block;}
 
 .btn{
     display:inline-block;
-    padding:14px 20px;
-    margin:8px;
+    width:160px;
+    padding:14px 0;
     font-size:16px;
     font-weight:bold;
     border-radius:6px;
     text-decoration:none;
     color:#fff;
+    text-align:center;
 }
 .btn-zalo{background:#0f9d58;}
 .btn-fb{background:#1877f2;}
-.btn-wifi{background:#e53935; font-size:20px;}
-.btn-kho{background:#673ab7;}
+.btn-wifi{background:#e53935; font-size:20px; width:auto; padding:16px 30px;}
+.btn-kho{background:#673ab7; width:auto; padding:14px 30px;}
 
+.call-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    flex-wrap:wrap;
+}
 .call-text{
     font-size:18px;
     font-weight:bold;
-    margin-top:10px;
-}
-.call-text span{
-    font-size:22px;
 }
 
 .house-box{
@@ -71,6 +75,8 @@ img{max-width:100%; display:block;}
 /* FORM */
 .form-wrap{
     max-width:420px;
+    margin:0 auto;
+    text-align:center;
 }
 .form-wrap input{
     width:100%;
@@ -103,17 +109,13 @@ img{max-width:100%; display:block;}
     <!-- BANNER -->
     <img src="https://raw.githubusercontent.com/tuan123git/landingnha/main/Banner1.png">
 
-    <!-- CALL TEXT -->
-    <div class="section center">
-        <div class="call-text">
-            GỌI NGAY <span>👇👇</span>
+    <!-- CALL + SOCIAL -->
+    <div class="section">
+        <div class="call-row">
+            <div class="call-text">GỌI NGAY 👉</div>
+            <a class="btn btn-zalo" href="https://zalo.me/0975626023" target="_blank">ZALO</a>
+            <a class="btn btn-fb" href="https://www.facebook.com/letuanbds123/" target="_blank">FACEBOOK</a>
         </div>
-    </div>
-
-    <!-- SOCIAL -->
-    <div class="section center">
-        <a class="btn btn-zalo" href="https://zalo.me/0975626023" target="_blank">ZALO</a>
-        <a class="btn btn-fb" href="https://www.facebook.com/letuanbds123/" target="_blank">FACEBOOK</a>
     </div>
 
     <!-- WIFI -->
@@ -155,7 +157,7 @@ img{max-width:100%; display:block;}
 
     <!-- FORM -->
     <div class="section">
-        <h2>ĐĂNG KÝ NGAY</h2>
+        <h2 class="center">ĐĂNG KÝ NGAY</h2>
         <form class="form-wrap">
             <input type="text" name="name" placeholder="Họ và Tên" required>
             <input type="tel" name="phone" placeholder="Số điện thoại" required>
