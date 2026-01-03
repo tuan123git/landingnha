@@ -1,73 +1,160 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Danh sách nhà Tuấn 123 Mỹ Đình</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuấn 123 Tuyển Dụng Chuyên Viên</title>
   <style>
     body {
-      font-family: sans-serif;
       margin: 0;
-      padding: 1rem;
-      background: #f8f8f8;
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      color: #111;
+    }
+    .hero {
+      background: #b91c1c;
+      color: #fff;
+      padding: 24px 16px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+    .hero p {
+      font-size: 15px;
+    }
+    .container {
+      padding: 16px;
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
     }
     h2 {
+      color: #b91c1c;
+      font-size: 18px;
+      margin-top: 24px;
+    }
+    ul {
+      padding-left: 18px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .house {
+      border: 1px solid #e5e7eb;
+      padding: 10px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      background: #fafafa;
+      font-size: 14px;
+    }
+    .cta {
+      display: flex;
+      gap: 10px;
+      margin: 20px 0;
+    }
+    .cta a {
+      flex: 1;
       text-align: center;
-      margin-bottom: 1rem;
-    }
-    .house-card {
-      background: #fff;
-      border-radius: 10px;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .house-card h3 {
-      margin: 0 0 0.5rem;
-    }
-    .btn-group {
-      margin-top: 0.5rem;
-    }
-    .btn {
-      background: #007bff;
+      padding: 14px;
       color: #fff;
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      margin-right: 0.5rem;
-      cursor: pointer;
       text-decoration: none;
-      display: inline-block;
+      font-weight: bold;
+      border-radius: 6px;
     }
-    .btn.zalo {
-      background: #00b900;
+    .call {
+      background: #dc2626;
+    }
+    .zalo {
+      background: #2563eb;
+    }
+    form {
+      margin-top: 20px;
+      background: #f9fafb;
+      padding: 16px;
+      border-radius: 8px;
+    }
+    input, button {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      border: 1px solid #d1d5db;
+      font-size: 15px;
+    }
+    button {
+      background: #b91c1c;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+    }
+    .footer {
+      background: #111827;
+      color: #fff;
+      padding: 16px;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
-  <h2>📍 Danh sách nhà Tuấn 123 Mỹ Đình</h2>
 
-  <div class="house-card">
-    <h3>Nhà 5 tầng Phú Đô – 66m² – 14.5 tỷ</h3>
-    <p>✅ Mặt ngõ ô tô tránh – Kinh doanh tốt – Gần hồ điều hoà</p>
-    <p>📞 CG: Đỗ Dũng – 0392569368</p>
-    <div class="btn-group">
-      <a href="https://maps.app.goo.gl/khrsvBLbWTxghXxF8" target="_blank" class="btn">Xem bản đồ</a>
-      <a href="tel:0392569368" class="btn">Gọi ngay</a>
-      <a href="https://zalo.me/0392569368" class="btn zalo">Nhắn Zalo</a>
-    </div>
+<div class="hero">
+  <h1>TUẤN 123 TUYỂN DỤNG 50 CHUYÊN VIÊN BÁN HÀNG</h1>
+  <p>Thu nhập cao – Đào tạo bài bản – Đội nhóm đồng hành</p>
+</div>
+
+<div class="container">
+
+  <h2>Quyền lợi khi tham gia</h2>
+  <ul>
+    <li>Hoa hồng Đầu khách cao nhất thị trường</li>
+    <li>Kho hàng hơn 30.000 căn nhà thật</li>
+    <li>Đào tạo miễn phí – cầm tay chỉ việc đến khi có chốt</li>
+    <li>Đội nhóm hỗ trợ 24/7</li>
+    <li>Thưởng – Vinh danh – Du lịch – Phát triển bản thân</li>
+    <li>App nguồn hàng thông minh, tiện dụng nhất</li>
+  </ul>
+
+  <h2>Nhà ngon đang bán</h2>
+
+  <div class="house">
+    <b>378.28 Mỹ Đình</b> – 51m² – 13.5 tỷ<br>
+    CG Hảo – 0827 782 568
   </div>
 
-  <div class="house-card">
-    <h3>Nhà đẹp Đại Linh – 63m² – 26.8 tỷ</h3>
-    <p>✅ Khu phân lô, mặt tiền rộng, vị trí trung tâm</p>
-    <p>📞 CG: Bảo – 0916081089</p>
-    <div class="btn-group">
-      <a href="https://maps.app.goo.gl/Cpo5A2xfBXgADW3J7" target="_blank" class="btn">Xem bản đồ</a>
-      <a href="tel:0916081089" class="btn">Gọi ngay</a>
-      <a href="https://zalo.me/0916081089" class="btn zalo">Nhắn Zalo</a>
-    </div>
+  <div class="house">
+    <b>324.26.10C Phương Canh</b> – 32/38m² – 7.1 tỷ<br>
+    CG Hảo – 0827 782 568
   </div>
+
+  <div class="house">
+    <b>67.11 Đình Thôn</b> – 82m² – 21.5 tỷ<br>
+    CG Lan Anh – 0981 628 218
+  </div>
+
+  <p><b>Có khách phù hợp – liên hệ trực tiếp Chuyên gia quản lý!</b></p>
+
+  <div class="cta">
+    <a class="call" href="tel:0975626023">📞 GỌI NGAY</a>
+    <a class="zalo" href="https://zalo.me/0975626023">💬 CHAT ZALO</a>
+  </div>
+
+  <h2>Đăng ký nhận tư vấn</h2>
+  <form action="https://formsubmit.co/anhtuan0903@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="Đăng ký tuyển dụng Tuấn 123">
+    <input type="text" name="name" placeholder="Họ và tên" required>
+    <input type="tel" name="phone" placeholder="Số điện thoại" required>
+    <button type="submit">GỬI THÔNG TIN</button>
+  </form>
+
+</div>
+
+<div class="footer">
+  <p><b>Tướng quân Tuấn</b> – Giám đốc điều hành Tuấn 123 Mỹ Đình</p>
+  <p>Văn phòng: Tầng 2, số 1 ngõ 79 Thiên Hiền, Mỹ Đình, Hà Nội</p>
+  <p>Hotline: 0975 626 023 – 0987 831 806</p>
+</div>
 
 </body>
 </html>
