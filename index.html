@@ -1,231 +1,159 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tuấn 123 – Tuyển dụng Chuyên viên</title>
-
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f5f6fa;
-  color: #222;
-}
-
-/* Banner */
-.banner img {
-  width: 100%;
-  display: block;
-}
-
-/* Nút WIFI */
-.wifi-box {
-  text-align: center;
-  padding: 30px 20px;
-  background: #ffffff;
-}
-
-.wifi-btn {
-  display: inline-block;
-  padding: 18px 30px;
-  font-size: 20px;
-  font-weight: bold;
-  color: #fff;
-  background: linear-gradient(135deg,#007bff,#00c6ff);
-  border-radius: 40px;
-  text-decoration: none;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-}
-
-/* Mã giới thiệu */
-.code-box {
-  margin-top: 20px;
-  font-size: 18px;
-}
-
-.code {
-  color: #fff;
-  background: #d60000;
-  padding: 6px 14px;
-  border-radius: 6px;
-  font-weight: bold;
-}
-
-/* Nhà ngon */
-.hot-houses {
-  padding: 30px 20px;
-  background: #f8f9fb;
-}
-
-.hot-houses h2 {
-  text-align: center;
-  color: #b30000;
-  margin-bottom: 20px;
-}
-
-.house-scroll {
-  display: flex;
-  gap: 16px;
-  overflow-x: auto;
-  padding-bottom: 10px;
-}
-
-.house-card {
-  min-width: 260px;
-  background: #fff;
-  border-radius: 14px;
-  padding: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.house-card h3 {
-  color: #003366;
-  font-size: 16px;
-  margin-bottom: 8px;
-}
-
-.house-card p {
-  font-size: 14px;
-  margin: 4px 0;
-}
-
-/* Nút kho nhà */
-.more-box {
-  text-align: center;
-  margin: 30px 0;
-}
-
-.more-btn {
-  display: inline-block;
-  padding: 14px 26px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #fff;
-  background: #e60000;
-  border-radius: 30px;
-  text-decoration: none;
-}
-
-/* Truyền thông */
-.media img {
-  width: 100%;
-  display: block;
-  margin-bottom: 10px;
-}
-
-/* Liên hệ */
-.contact {
-  background: #003366;
-  color: #fff;
-  padding: 30px 20px;
-  text-align: center;
-}
-
-.contact a {
-  display: inline-block;
-  margin: 10px;
-  padding: 12px 22px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.zalo { background: #00aaff; color: #fff; }
-.fb { background: #1877f2; color: #fff; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuấn 123 Tuyển Dụng Chuyên Viên</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      color: #111;
+    }
+    .hero {
+      background: #b91c1c;
+      color: #fff;
+      padding: 24px 16px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+    .hero p {
+      font-size: 15px;
+    }
+    .container {
+      padding: 16px;
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+    }
+    h2 {
+      color: #b91c1c;
+      font-size: 18px;
+      margin-top: 24px;
+    }
+    ul {
+      padding-left: 18px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .house {
+      border: 1px solid #e5e7eb;
+      padding: 10px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      background: #fafafa;
+      font-size: 14px;
+    }
+    .cta {
+      display: flex;
+      gap: 10px;
+      margin: 20px 0;
+    }
+    .cta a {
+      flex: 1;
+      text-align: center;
+      padding: 14px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+    .call {
+      background: #dc2626;
+    }
+    .zalo {
+      background: #2563eb;
+    }
+    form {
+      margin-top: 20px;
+      background: #f9fafb;
+      padding: 16px;
+      border-radius: 8px;
+    }
+    input, button {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      border: 1px solid #d1d5db;
+      font-size: 15px;
+    }
+    button {
+      background: #b91c1c;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+    }
+    .footer {
+      background: #111827;
+      color: #fff;
+      padding: 16px;
+      font-size: 14px;
+    }
+  </style>
 </head>
-
 <body>
 
-<!-- Banner -->
-<div class="banner">
-  <img src="https://raw.githubusercontent.com/tuan123git/landingnha/main/Banner.png">
+<div class="hero">
+  <h1>TUẤN 123 TUYỂN DỤNG 50 CHUYÊN VIÊN BÁN HÀNG</h1>
+  <p>Thu nhập cao – Đào tạo bài bản – Đội nhóm đồng hành</p>
 </div>
 
-<!-- WIFI -->
-<div class="wifi-box">
-  <a class="wifi-btn" href="https://www.facebook.com/tuanthocu0975626023" target="_blank">
-    🔵 KẾT NỐI WIFI MIỄN PHÍ
-  </a>
+<div class="container">
 
-  <div class="code-box">
-    MÃ GIỚI THIỆU ĐỂ TRUY CẬP:
-    <span class="code">BDA54AE5</span>
+  <h2>Quyền lợi khi tham gia</h2>
+  <ul>
+    <li>Hoa hồng Đầu khách cao nhất thị trường</li>
+    <li>Kho hàng hơn 30.000 căn nhà thật</li>
+    <li>Đào tạo miễn phí – cầm tay chỉ việc đến khi có chốt</li>
+    <li>Đội nhóm hỗ trợ 24/7</li>
+    <li>Thưởng – Vinh danh – Du lịch – Phát triển bản thân</li>
+    <li>App nguồn hàng thông minh, tiện dụng nhất</li>
+  </ul>
+
+  <h2>Nhà ngon đang bán</h2>
+
+  <div class="house">
+    <b>378.28 Mỹ Đình</b> – 51m² – 13.5 tỷ<br>
+    CG Hảo – 0827 782 568
   </div>
-</div>
 
-<!-- Nhà ngon -->
-<section class="hot-houses">
-<h2>🏠 NHÀ NGON ĐANG BÁN</h2>
+  <div class="house">
+    <b>324.26.10C Phương Canh</b> – 32/38m² – 7.1 tỷ<br>
+    CG Hảo – 0827 782 568
+  </div>
 
-<div class="house-scroll">
+  <div class="house">
+    <b>67.11 Đình Thôn</b> – 82m² – 21.5 tỷ<br>
+    CG Lan Anh – 0981 628 218
+  </div>
 
-<div class="house-card">
-<h3>378.28 Mỹ Đình</h3>
-<p>51m² | 4T | MT 4.32m</p>
-<p>💰 13.5 tỷ</p>
-<p>📍 Nam Từ Liêm</p>
-<p>👤 CG Hảo – 0827 782 568</p>
-</div>
+  <p><b>Có khách phù hợp – liên hệ trực tiếp Chuyên gia quản lý!</b></p>
 
-<div class="house-card">
-<h3>324.26.10C Phương Canh</h3>
-<p>32/38m² | 5T | MT 3.4m</p>
-<p>💰 7.1 tỷ</p>
-<p>📍 Nam Từ Liêm</p>
-<p>👤 CG Hảo – 0827 782 568</p>
-</div>
+  <div class="cta">
+    <a class="call" href="tel:0975626023">📞 GỌI NGAY</a>
+    <a class="zalo" href="https://zalo.me/0975626023">💬 CHAT ZALO</a>
+  </div>
 
-<div class="house-card">
-<h3>367.47.10 Xuân Phương</h3>
-<p>36m² | 5T | MT 5m</p>
-<p>💰 6.95 tỷ</p>
-<p>📍 Nam Từ Liêm</p>
-<p>👤 CG Hảo – 0827 782 568</p>
-</div>
-
-<div class="house-card">
-<h3>67.11 Đình Thôn</h3>
-<p>82m² | 4T | MT 4.3m</p>
-<p>💰 21.5 tỷ</p>
-<p>📍 Nam Từ Liêm</p>
-<p>👤 CG Lan Anh – 0981 628 218</p>
-</div>
-
-<div class="house-card">
-<h3>50.71.4.6 Mễ Trì Thượng</h3>
-<p>71m² | 3T | MT 4.2m</p>
-<p>💰 16 tỷ</p>
-<p>📍 Nam Từ Liêm</p>
-<p>👤 CG Lan Anh – 0981 628 218</p>
-</div>
+  <h2>Đăng ký nhận tư vấn</h2>
+  <form action="https://formsubmit.co/anhtuan0903@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="Đăng ký tuyển dụng Tuấn 123">
+    <input type="text" name="name" placeholder="Họ và tên" required>
+    <input type="tel" name="phone" placeholder="Số điện thoại" required>
+    <button type="submit">GỬI THÔNG TIN</button>
+  </form>
 
 </div>
-</section>
 
-<!-- Kho nhà -->
-<div class="more-box">
-  <a class="more-btn" href="https://tuan123.daitheky.net/register/account" target="_blank">
-    📦 XEM THÊM KHO 30.000 CĂN
-  </a>
-</div>
-
-<!-- Truyền thông -->
-<div class="media">
-  <img src="https://raw.githubusercontent.com/tuan123git/landingnha/main/daotao.jpg">
-  <img src="https://raw.githubusercontent.com/tuan123git/landingnha/main/gioithieu.jpg">
-  <img src="https://raw.githubusercontent.com/tuan123git/landingnha/main/thulinh.jpg">
-  <img src="https://raw.githubusercontent.com/tuan123git/landingnha/main/tk%20mua%20he.jpg">
-</div>
-
-<!-- Liên hệ -->
-<div class="contact">
-  <h3>Tướng quân Tuấn – Giám đốc điều hành Tuấn 123 Mỹ Đình</h3>
-  <p>📞 0975 626 023</p>
-
-  <a class="zalo" href="https://zalo.me/0975626023" target="_blank">💬 ZALO</a>
-  <a class="fb" href="https://www.facebook.com/letuanbds123/" target="_blank">📘 FACEBOOK</a>
+<div class="footer">
+  <p><b>Tướng quân Tuấn</b> – Giám đốc điều hành Tuấn 123 Mỹ Đình</p>
+  <p>Văn phòng: Tầng 2, số 1 ngõ 79 Thiên Hiền, Mỹ Đình, Hà Nội</p>
+  <p>Hotline: 0975 626 023 – 0987 831 806</p>
 </div>
 
 </body>
