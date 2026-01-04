@@ -1,178 +1,98 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<title>Tuấn 123 Tuyển Dụng</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background:#f5f5f5;
-}
-.container{
-    max-width:900px;
-    margin:auto;
-    background:#fff;
-}
-img{max-width:100%; display:block;}
-
-.section{padding:20px;}
-.center{text-align:center;}
-
-.btn{
-    display:inline-block;
-    width:160px;
-    padding:14px 0;
-    font-size:16px;
-    font-weight:bold;
-    border-radius:6px;
-    text-decoration:none;
-    color:#fff;
-    text-align:center;
-}
-.btn-zalo{background:#0f9d58;}
-.btn-fb{background:#1877f2;}
-.btn-wifi{background:#e53935; font-size:20px; width:auto; padding:16px 30px;}
-.btn-kho{background:#673ab7; width:auto; padding:14px 30px;}
-
-.call-row{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:10px;
-    flex-wrap:wrap;
-}
-.call-text{
-    font-size:18px;
-    font-weight:bold;
-}
-
-.house-box{
-    max-height:220px;
-    overflow-y:auto;
-    background:#fafafa;
-    border:1px solid #ddd;
-    padding:10px;
-}
-.house-item{
-    padding:8px 0;
-    border-bottom:1px dashed #ccc;
-}
-
-.code-box{
-    margin-top:10px;
-    font-size:18px;
-    font-weight:bold;
-}
-.code-box span{color:red;}
-
-.media img{
-    width:50%;
-    margin:10px auto;
-}
-
-/* FORM */
-.form-wrap{
-    max-width:420px;
-    margin:0 auto;
-    text-align:center;
-}
-.form-wrap input{
-    width:100%;
-    padding:12px;
-    margin:8px 0;
-    font-size:16px;
-}
-.form-wrap button{
-    width:100%;
-    padding:14px;
-    font-size:18px;
-    background:#009688;
-    color:#fff;
-    border:none;
-    border-radius:6px;
-}
-
-.footer{
-    background:#222;
-    color:#fff;
-    padding:20px;
-    font-size:14px;
-}
-</style>
+  <meta charset="UTF-8" />
+  <title>Tuấn 123 – Tuyển dụng Chuyên viên</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-<div class="container">
+<body class="bg-gray-50 text-gray-800">
 
-    <!-- BANNER -->
-    <img src="https://raw.githubusercontent.com/tuan123git/landingnha/main/Banner1.png">
+<!-- BANNER -->
+<img src="https://raw.githubusercontent.com/tuan123git/landingnha/main/Banner1.png"
+     class="w-full max-h-[420px] object-cover">
 
-    <!-- CALL + SOCIAL -->
-    <div class="section">
-        <div class="call-row">
-            <div class="call-text">GỌI NGAY 👉</div>
-            <a class="btn btn-zalo" href="https://zalo.me/0975626023" target="_blank">ZALO</a>
-            <a class="btn btn-fb" href="https://www.facebook.com/letuanbds123/" target="_blank">FACEBOOK</a>
-        </div>
-    </div>
-
-    <!-- WIFI -->
-    <div class="section center">
-        <a class="btn btn-wifi" href="https://www.facebook.com/tuanthocu0975626023" target="_blank">
-            KẾT NỐI WIFI
-        </a>
-    </div>
-
-    <!-- NHÀ NGON -->
-    <div class="section">
-        <h2>NHÀ NGON ĐANG BÁN</h2>
-        <div class="house-box">
-            <div class="house-item">378.28 Mỹ Đình 51m – 4 tầng – MT 4.3m – Giá 13.5 tỷ – HH3%</div>
-            <div class="house-item">324.26.10C Phương Canh 38m – 5 tầng – MT 3.4m – Giá 7.1 tỷ – HH3%</div>
-            <div class="house-item">367.47.10 Xuân Phương 36m – 5 tầng – MT 5m – Giá 6.95 tỷ – HH3%</div>
-            <div class="house-item">67.11 Đình Thôn 82m – 4 tầng – MT 4.3m – Giá 21.5 tỷ – HH3%</div>
-            <div class="house-item">50.71.4.6 Mễ Trì Thượng 71m – 3 tầng – MT 4.2m – Giá 16 tỷ – HH3%</div>
-            <div class="house-item">367.62.18.31 Xuân Phương 30m – 5 tầng – MT 3.6m – Giá 6.2 tỷ – HH3%</div>
-        </div>
-
-        <div class="center">
-            <a class="btn btn-kho" href="https://tuan123.daitheky.net/register/account" target="_blank">
-                XEM THÊM KHO 30.000 CĂN
-            </a>
-            <div class="code-box">
-                MÃ GIỚI THIỆU ĐỂ TRUY CẬP: <span>BDA54AE5</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- MEDIA -->
-    <div class="section media center">
-        <img src="https://raw.githubusercontent.com/tuan123git/landingnha/main/daotao.jpg">
-        <img src="https://raw.githubusercontent.com/tuan123git/landingnha/main/gioithieu.jpg">
-        <img src="https://raw.githubusercontent.com/tuan123git/landingnha/main/thulinh.jpg">
-        <img src="https://raw.githubusercontent.com/tuan123git/landingnha/main/tk%20mua%20he.jpg">
-    </div>
-
-    <!-- FORM -->
-    <div class="section">
-        <h2 class="center">ĐĂNG KÝ NGAY</h2>
-        <form class="form-wrap">
-            <input type="text" name="name" placeholder="Họ và Tên" required>
-            <input type="tel" name="phone" placeholder="Số điện thoại" required>
-            <button type="submit">GỬI THÔNG TIN</button>
-        </form>
-    </div>
-
-    <!-- FOOTER -->
-    <div class="footer">
-        <b>Tướng quân Tuấn</b> – Giám đốc điều hành Tuấn 123 Mỹ Đình<br>
-        Văn phòng Tuấn 123 Mỹ Đình<br>
-        Địa chỉ: Tầng 2, số 1 ngõ 79 Thiên Hiền (Ngõ 139 Mỹ Đình), P Từ Liêm, TP Hà Nội<br>
-        Hotline: 0975 626 023 – 0987 831 806
-    </div>
-
+<!-- CTA -->
+<div class="text-center mt-4 space-y-3">
+  <div class="flex justify-center items-center gap-6 text-lg font-bold">
+    👉 <a href="https://zalo.me/0975626023" class="bg-blue-500 text-white px-6 py-2 rounded">ZALO</a>
+    <a href="https://www.facebook.com/tuanthocu0975626023" class="bg-blue-700 text-white px-6 py-2 rounded">FACEBOOK</a>
+    👈 GỌI NGAY
+  </div>
 </div>
+
+<!-- ĐĂNG KÝ -->
+<div class="mt-8 text-center">
+  <h2 class="text-2xl font-bold mb-4">ĐĂNG KÝ NGAY</h2>
+  <form class="flex flex-col items-center gap-3">
+    <input type="text" placeholder="Họ và tên"
+      class="border w-72 p-2 rounded text-left">
+    <input type="tel" placeholder="Số điện thoại"
+      class="border w-72 p-2 rounded text-left">
+    <button class="bg-red-600 text-white px-8 py-2 rounded font-bold">
+      GỬI THÔNG TIN
+    </button>
+  </form>
+</div>
+
+<!-- NHÀ NGON -->
+<div class="max-w-4xl mx-auto mt-10">
+  <h2 class="text-xl font-bold mb-3 text-center">NHÀ NGON ĐANG BÁN</h2>
+
+  <div id="houseList"
+       class="h-64 overflow-y-auto border rounded p-4 space-y-2 bg-white">
+    Đang tải dữ liệu...
+  </div>
+
+  <div class="text-center mt-4">
+    <a href="https://tuan123.daitheky.net/register/account"
+       class="bg-green-600 text-white px-6 py-2 rounded font-bold">
+      XEM THÊM KHO 30.000 CĂN
+    </a>
+    <div class="mt-2 font-bold">
+      MÃ GIỚI THIỆU:
+      <span class="text-red-600">BDA54AE5</span>
+    </div>
+  </div>
+</div>
+
+<!-- LIÊN HỆ -->
+<div class="mt-10 p-6 bg-gray-100 text-center text-sm">
+  <b>Tướng quân Tuấn</b> – Giám đốc điều hành Tuấn 123 Mỹ Đình<br>
+  Văn phòng: Tầng 2, số 1 ngõ 79 Thiên Hiền (Ngõ 139 Mỹ Đình)<br>
+  Hotline: <b>0975 626 023 – 0987 831 806</b>
+</div>
+
+<!-- SCRIPT GOOGLE SHEET -->
+<script>
+const API_URL = "https://script.google.com/macros/s/AKfycbyKPk0AtEHRfAhR6Dzjflu_xwo8456fvcH1L9bbM5rONKwaNi8JP5GlgWr8dOHZeEu-4g/exec";
+
+fetch(API_URL)
+  .then(res => res.json())
+  .then(data => {
+    const box = document.getElementById("houseList");
+    box.innerHTML = "";
+
+    data.slice(0, 20).forEach(item => {
+      const div = document.createElement("div");
+      div.className = "border-b pb-1";
+      div.innerHTML = `
+        <b>${item["Mã"] || ""}</b> –
+        ${item["Khu vực"] || ""},
+        ${item["Diện tích"] || ""}m,
+        ${item["Số tầng"] || ""} tầng,
+        Giá <b>${item["Giá"] || ""}</b> tỷ,
+        HH <b class="text-red-600">${item["Hoa hồng"] || ""}</b>
+      `;
+      box.appendChild(div);
+    });
+  })
+  .catch(() => {
+    document.getElementById("houseList").innerText =
+      "Không tải được dữ liệu.";
+  });
+</script>
+
 </body>
 </html>
